@@ -1,0 +1,25 @@
+{
+
+"animal":[
+    {"name":"lion"},
+    {"name":"leopard"}
+],
+"students":[{"id":1,"first_name":"Ashla","last_name":"Graben","fee_balance":69826},
+{"id":2,"first_name":"Rakel","last_name":"Iggo","fee_balance":94024},
+{"id":3,"first_name":"Editha","last_name":"Boodell","fee_balance":18959},
+{"id":4,"first_name":"Hayes","last_name":"Joret","fee_balance":80972},
+{"id":5,"first_name":"Darcy","last_name":"Stoffel","fee_balance":63151},
+{"id":6,"first_name":"Roseline","last_name":"Dominichetti","fee_balance":43586},
+{"id":7,"first_name":"Rakel","last_name":"Hinken","fee_balance":47647},
+{"id":8,"first_name":"Rowney","last_name":"Dik","fee_balance":63594},
+{"id":9,"first_name":"Sammie","last_name":"Wellum","fee_balance":31372},
+{"id":10,"first_name":"Nicolais","last_name":"Ochterlony","fee_balance":16377}]
+
+
+
+
+
+
+
+
+}

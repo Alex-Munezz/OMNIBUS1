@@ -221,7 +221,7 @@ trigger.addEventListener('mouseover',()=>{
 emoji.textContent=String.fromCodePoint(0x1f600)
 })
 trigger.addEventListener('mouseout',()=>{
-emoji.textContent=String.fromCodePoint(0x1f615)
+emoji.textContent=String.fromCodePoint(0x1f614)
 })
 let form=document.querySelector('form')
 let mlist=document.querySelector('#list')
@@ -249,6 +249,24 @@ image.src=data.image
     display.append(image, p)
 })
 // json-server
+let studentcont=document.querySelector('#display-students')
+fetch('http://localhost:3000/students').then(res=>res.json()).then(data=>{
+    let table=`<table> <tr><th>id</th><th>first_name</th><th>last_name</th><th>fee_balance</th></tr>`
+    let stdinfo
+    data.forEach(student=>{
+ stdinfo+=`
+<tr>
+    <td>${student.id}</td>
+    <td>${student.first_name}</td>
+    <td>${student.last_name}</td>
+    <td>${student.fee_balance}</td>
+    </tr>
+`
+    })
+    // console.log(stdinfo)
+let final_table=table+stdinfo+'<table/>'
+studentcont.innerHTML=final_table
+})
 
 
 
