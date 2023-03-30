@@ -128,12 +128,24 @@ printBio:function(){
 
 
 }
-window.y=90
-window.age=40
-console.log(obj.printBio())
+// window.y=90
+// window.age=40
+// console.log(obj.printBio())
 function sum(a,b){
+    this.name="Steve"
     console.log(this.y, this.age)
     return a+b
 }
-console.log(sum(12,45))
+// console.log(sum(12,45))
 // Add Code
+function savings(){
+    // console.log(arguments)
+
+}
+
+// BankAcc.call(savings,1234,"Mike",50000)
+BankAcc.apply(savings,[1234,"Mike",50000])
+console.log(savings)
+savings.prototype=Object.create(BankAcc.prototype)
+// console.log(savings.withdraw(5000))
+console.log(savings.prototype.inqbalance())
