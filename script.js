@@ -149,3 +149,24 @@ console.log(savings)
 savings.prototype=Object.create(BankAcc.prototype)
 // console.log(savings.withdraw(5000))
 console.log(savings.prototype.inqbalance())
+
+
+
+function printN(){
+    console.log(this.name, this.age)
+}
+// printN()
+let obj2={
+    name:"Richard",
+    age:45
+}
+let obj3={
+    name:"silverback",age:2
+}
+let boundpr=printN.bind(obj2)
+printN.apply(obj3)
+// boundpr()
+
+
+
+
