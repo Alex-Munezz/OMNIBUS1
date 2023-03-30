@@ -114,6 +114,19 @@ BankAcc.prototype.withdraw=function(amount){
         return this.balance
 }
 
-console.log(acn.withdraw(70000)) 
+// console.log(acn.withdraw(70000)) 
+// bind, call and apply
+// context-> 
+// implicit, explicit
+let obj={
+name:"steve",
+age:40,
+printBio:function(){
+    console.log(this.name, this.age)
+    return this
+}
 
+
+}
+console.log(obj.printBio())
 // Add Code
