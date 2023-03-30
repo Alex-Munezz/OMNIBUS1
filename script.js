@@ -128,5 +128,12 @@ printBio:function(){
 
 
 }
+window.y=90
+window.age=40
 console.log(obj.printBio())
+function sum(a,b){
+    console.log(this.y, this.age)
+    return a+b
+}
+console.log(sum(12,45))
 // Add Code
