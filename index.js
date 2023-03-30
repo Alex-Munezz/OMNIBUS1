@@ -242,7 +242,8 @@ let display=document.getElementById('display')
 
 fetch('https://some-random-api.ml/animal/koala').then(res=>res.json()).then(data=>{
 
-let p= document.createElement('p')
+let p= document.createElement('p')  
+
 p.innerText=data.fact
 let image=document.createElement('img')
 image.src=data.image
@@ -263,10 +264,31 @@ fetch('http://localhost:3000/students').then(res=>res.json()).then(data=>{
     </tr>
 `
     })
-    // console.log(stdinfo)
 let final_table=table+stdinfo+'<table/>'
 studentcont.innerHTML=final_table
 })
+[1,2,3,4,5].filter(n=>n>5) //? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
